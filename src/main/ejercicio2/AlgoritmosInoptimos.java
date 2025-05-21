@@ -26,7 +26,7 @@ public class AlgoritmosInoptimos {
                 count++;
         }
         return count;
-    }
+    } //Ocupar en este Hash Set
 
     // 3. Encontrar el valor máximo usando dos bucles
     public static int encontrarMaximo(int[] arr) {

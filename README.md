@@ -64,7 +64,7 @@ Este archivo compara tus respuestas con las correctas y muestra un reporte indic
 1. Compila primero el código fuente:
 
    ```bash
-   javac -d out src/main/ejercico1/AlgoritmosEjemplo.java src/main/ejercico1/RespuestasComplejidad.java
+   javac -d out src/main/ejercicio1/AlgoritmosEjemplo.java src/main/ejercicio1/RespuestasComplejidad.java
    ```
 2. Luego compila el test (indicando dónde buscar las clases compiladas):
 
@@ -81,10 +81,10 @@ Verás un reporte como el siguiente:
 
 ```
 ==== Resultados de Complejidad ====
- 1. imprimirArreglo    -> Tu respuesta: O(n)      | Correcta: O(n)    ✔️
- 2. busquedaLineal     -> Tu respuesta: O(n)      | Correcta: O(n)    ✔️
- 3. busquedaBinaria    -> Tu respuesta: O(log n)  | Correcta: O(log n)✔️
- 4. factorial          -> Tu respuesta: O(n)      | Correcta: O(n)    ✔️
+ 1. imprimirArreglo    -> Tu respuesta: O(n)      | Correcta: O(n)    YES
+ 2. busquedaLineal     -> Tu respuesta: O(n)      | Correcta: O(n)    YES
+ 3. busquedaBinaria    -> Tu respuesta: O(log n)  | Correcta: O(log n)YES
+ 4. factorial          -> Tu respuesta: O(n)      | Correcta: O(n)    YES
  ...
 --------------------------------------
 Correctas:   9
@@ -175,7 +175,7 @@ public static boolean tieneDuplicadosOpt(int[] arr) {
 2. Luego compila el test (indicando el classpath de salida):
 
    ```bash
-   javac -d out -cp "out:lib/*" src/test/TestOptimizacion.java
+   javac -d out -cp "out;lib/*" src/test/TestOptimizacion.java
    ```
 3. Ejecuta el test:
 

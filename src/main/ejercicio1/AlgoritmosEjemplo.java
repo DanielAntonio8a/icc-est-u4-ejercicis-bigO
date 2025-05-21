@@ -16,7 +16,7 @@ public class AlgoritmosEjemplo {
                 return i;
         }
         return -1;
-    }
+    } 
 
     // 3. Búsqueda binaria (arreglo ordenado)
     public static int busquedaBinaria(int[] arr, int clave) {
@@ -31,21 +31,21 @@ public class AlgoritmosEjemplo {
                 derecha = medio - 1;
         }
         return -1;
-    }
+    } // O(n log)
 
     // 4. Factorial recursivo
     public static int factorial(int n) {
         if (n == 0)
             return 1;
         return n * factorial(n - 1);
-    }
+    } //O(n)
 
     // 5. Fibonacci recursivo
     public static int fibonacci(int n) {
         if (n <= 1)
             return n;
         return fibonacci(n - 1) + fibonacci(n - 2);
-    }
+    }//O(2^n)
 
     // 6. Bubble Sort
     public static void bubbleSort(int[] arr) {
@@ -59,7 +59,7 @@ public class AlgoritmosEjemplo {
                 }
             }
         }
-    }
+    }//O(n^2)
 
     // 7. Quick Sort
     public static void quickSort(int[] arr, int low, int high) {
@@ -68,7 +68,7 @@ public class AlgoritmosEjemplo {
             quickSort(arr, low, pi - 1);
             quickSort(arr, pi + 1, high);
         }
-    }
+    }//O(n log n)
 
     private static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
@@ -96,7 +96,7 @@ public class AlgoritmosEjemplo {
             }
         }
         return suma;
-    }
+    }//O(n^2)
 
     // 9. Encontrar el máximo en un arreglo
     public static int encontrarMaximo(int[] arr) {
@@ -106,12 +106,12 @@ public class AlgoritmosEjemplo {
                 max = n;
         }
         return max;
-    }
+    }//O(n)
 
     // 10. Potencia recursiva
     public static int potencia(int base, int exponente) {
         if (exponente == 0)
             return 1;
         return base * potencia(base, exponente - 1);
-    }
+    }//O(n)
 }
